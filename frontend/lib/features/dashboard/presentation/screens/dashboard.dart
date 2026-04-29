@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:frontend/features/auth/presentation/providers/login_controller.dart';
 
+import '../widgets/location_header_widget.dart';
+
 class Dashboard extends ConsumerWidget {
   const Dashboard({super.key});
 
@@ -10,7 +12,14 @@ class Dashboard extends ConsumerWidget {
   Widget build(BuildContext context,ref) {
     // final user = ref.watch(currentUserProvider);
     return Scaffold(
-
+body: SingleChildScrollView(
+  child: Column(
+    children: [
+      SizedBox(height: 40,),
+      LocationHeader()
+    ],
+  ),
+),
     );
   }
 }
