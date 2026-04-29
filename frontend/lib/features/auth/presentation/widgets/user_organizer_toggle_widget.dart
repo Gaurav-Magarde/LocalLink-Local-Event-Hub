@@ -3,7 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:frontend/features/auth/domain/models/user.dart';
 
 import '../../../../core/theme/colors.dart';
-import '../controllers/login_controller.dart';
+import '../providers/login_controller.dart';
 
 
 class RoleToggleWidget extends ConsumerWidget {

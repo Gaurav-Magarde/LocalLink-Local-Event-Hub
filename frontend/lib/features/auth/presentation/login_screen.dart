@@ -7,7 +7,7 @@ import 'package:frontend/features/auth/presentation/widgets/top_image_textspan_w
 import 'package:go_router/go_router.dart';
 
 import '../../../core/utils/validators/validators,dart.dart';
-import 'controllers/login_controller.dart';
+import 'providers/login_controller.dart';
 
 class LoginScreen extends ConsumerStatefulWidget {
   const LoginScreen({super.key});

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:frontend/core/router/screed_redirect_controller.dart';
-import 'package:frontend/features/auth/presentation/controllers/login_controller.dart';
+import 'package:frontend/features/auth/presentation/providers/login_controller.dart';
 
 import 'app_router.dart';
 
@@ -34,6 +34,8 @@ class _ScreenRedirect extends ConsumerState<ScreenRedirect>{
     ref.listenManual(currentUserProvider, (prev,next){
       final userLoggedIn = next;
       print("listener");
+      AppRoute.router.goNamed(AppRoutes.rootScreenName);
+return;
       if (userLoggedIn==null||userLoggedIn.id.isEmpty) {
         AppRoute.router.goNamed(AppRoutes.loginScreenName);
       } else {

@@ -1,7 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:frontend/core/router/app_router.dart';
 
-import '../../features/auth/presentation/controllers/login_controller.dart';
+import '../../features/auth/presentation/providers/login_controller.dart';
 
 final screenRedirectProvider = Provider((ref) => RouteController(ref));
 

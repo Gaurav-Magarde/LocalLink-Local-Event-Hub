@@ -1,5 +1,6 @@
+import 'package:frontend/core/router/root_screen.dart';
 import 'package:frontend/core/router/screen_redirect.dart';
-import 'package:frontend/features/event/presentation/screens/dashboard.dart';
+import 'package:frontend/features/dashboard/presentation/screens/dashboard.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../features/auth/presentation/login_screen.dart';
@@ -15,7 +16,15 @@ class AppRoute {
         builder: (context,state) {
           return LoginScreen();
         },
-      ),GoRoute(
+      ),
+      GoRoute(
+        path: AppRoutes.rootScreenPath,
+        name: AppRoutes.rootScreenName,
+        builder: (context,state) {
+          return RootScreen();
+        },
+      )
+      ,GoRoute(
         path: AppRoutes.signInScreenPath,
         name: AppRoutes.signInScreenName,
         builder: (context, state) {
@@ -48,5 +57,7 @@ interface class AppRoutes {
   static const String dashboardScreenName = 'dashboard';
   static const String screenRedirectPath = '/screenRedirect';
   static const String screenRedirectName = 'screenRedirect';
+  static const String rootScreenPath = '/rootScreen';
+  static const String rootScreenName = 'rootScreen';
   // static const String loginScreen = '/login';
 }
