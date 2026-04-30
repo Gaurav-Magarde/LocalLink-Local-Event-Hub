@@ -16,9 +16,9 @@ class RoleToggleWidget extends ConsumerWidget {
     return Container(
       height: 50,
       decoration: BoxDecoration(
-        color: EColors.backgroundPrimary,
+        color: AppColors.backgroundPrimary,
         borderRadius: BorderRadius.circular(25),
-        border: Border.all(color: EColors.borderSoft),
+        border: Border.all(color: AppColors.borderSoft),
       ),
       child: Row(
         children: [
@@ -30,7 +30,7 @@ class RoleToggleWidget extends ConsumerWidget {
               child: Container(
                 decoration: BoxDecoration(
                   color: selectedRole == UserRole.user
-                      ? EColors.primary
+                      ? AppColors.primary
                       : Colors.transparent,
                   borderRadius: BorderRadius.circular(25),
                 ),
@@ -40,8 +40,8 @@ class RoleToggleWidget extends ConsumerWidget {
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     color: selectedRole == UserRole.user
-                        ? EColors.backgroundPrimary
-                        : EColors.textSecondary,
+                        ? AppColors.backgroundPrimary
+                        : AppColors.textSecondary,
                   ),
                 ),
               ),
@@ -55,7 +55,7 @@ class RoleToggleWidget extends ConsumerWidget {
               child: Container(
                 decoration: BoxDecoration(
                   color: selectedRole == UserRole.organizer
-                      ? EColors.primary
+                      ? AppColors.primary
                       : Colors.transparent,
                   borderRadius: BorderRadius.circular(25),
                 ),
@@ -65,8 +65,8 @@ class RoleToggleWidget extends ConsumerWidget {
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     color: selectedRole == UserRole.organizer
-                        ? EColors.backgroundPrimary
-                        : EColors.textSecondary,
+                        ? AppColors.backgroundPrimary
+                        : AppColors.textSecondary,
                   ),
                 ),
               ),

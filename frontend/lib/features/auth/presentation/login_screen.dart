@@ -53,7 +53,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
               content: Text(e.toString()),
-              backgroundColor: EColors.error,
+              backgroundColor: AppColors.error,
             ),
           );
         },
@@ -157,7 +157,7 @@ SizedBox(height: 16,),
                   "Don't have an account? ",
                   style: Theme.of(
                     context,
-                  ).textTheme.labelMedium?.apply(color: EColors.textSecondary),
+                  ).textTheme.labelMedium?.apply(color: AppColors.textSecondary),
                 ),
                 InkWell(
                   onTap: () {
@@ -166,7 +166,7 @@ SizedBox(height: 16,),
                   child: Text(
                     "Sign up",
                     style: Theme.of(context).textTheme.titleSmall?.apply(
-                      color: EColors.textPrimary,
+                      color: AppColors.textPrimary,
                       fontWeightDelta: 2,
                     ),
                   ),

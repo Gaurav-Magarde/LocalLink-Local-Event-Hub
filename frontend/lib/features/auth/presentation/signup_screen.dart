@@ -57,7 +57,7 @@ class _SignupScreenState extends ConsumerState<SignupScreen> {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text(e.toString()),
-            backgroundColor: EColors.error,
+            backgroundColor: AppColors.error,
           ),
         );
       }, loading: (){},);
@@ -200,7 +200,7 @@ class _SignupScreenState extends ConsumerState<SignupScreen> {
                   "Already have an account? ",
                   style: Theme.of(
                     context,
-                  ).textTheme.labelMedium?.apply(color: EColors.textSecondary),
+                  ).textTheme.labelMedium?.apply(color: AppColors.textSecondary),
                 ),
                 InkWell(
                   onTap: () {
@@ -209,7 +209,7 @@ class _SignupScreenState extends ConsumerState<SignupScreen> {
                   child: Text(
                     "Login",
                     style: Theme.of(context).textTheme.titleSmall?.apply(
-                      color: EColors.textPrimary,
+                      color: AppColors.textPrimary,
                       fontWeightDelta: 2,
                     ),
                   ),

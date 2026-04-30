@@ -27,19 +27,19 @@ class _RootScreenState extends State<RootScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: EColors.background,
+      backgroundColor: AppColors.background,
 
       body: _screens[_currentIndex],
 
       bottomNavigationBar: NavigationBarTheme(
         data: NavigationBarThemeData(
-          indicatorColor: EColors.accentPrimary.withOpacity(0.2),
+          indicatorColor: AppColors.accentPrimary.withOpacity(0.2),
 
           labelTextStyle: WidgetStateProperty.resolveWith((states) {
             if (states.contains(WidgetState.selected)) {
-              return const TextStyle(color: EColors.primary, fontWeight: FontWeight.w600, fontSize: 12);
+              return const TextStyle(color: AppColors.primary, fontWeight: FontWeight.w600, fontSize: 12);
             }
-            return const TextStyle(color: EColors.textSecondary, fontWeight: FontWeight.w500, fontSize: 12);
+            return const TextStyle(color: AppColors.textSecondary, fontWeight: FontWeight.w500, fontSize: 12);
           }),
         ),
         child: NavigationBar(
@@ -49,29 +49,29 @@ class _RootScreenState extends State<RootScreen> {
               _currentIndex = index;
             });
           },
-          backgroundColor: EColors.backgroundPrimary, // Pure white bar
+          backgroundColor: AppColors.backgroundPrimary, // Pure white bar
           elevation: 0, // Keeps it flat and clean
           height: 70, // Gives it nice breathing room
 
           // The actual icons
           destinations: const [
             NavigationDestination(
-              icon: Icon(Icons.home_outlined, color: EColors.textSecondary),
-              selectedIcon: Icon(Icons.home, color: EColors.primary),
+              icon: Icon(Icons.home_outlined, color: AppColors.textSecondary),
+              selectedIcon: Icon(Icons.home, color: AppColors.primary),
               label: 'Home',
             ),
             NavigationDestination(
-              icon: Icon(Icons.airplane_ticket_outlined, color: EColors.textSecondary),
-              selectedIcon: Icon(Icons.airplane_ticket, color: EColors.primary),
+              icon: Icon(Icons.airplane_ticket_outlined, color: AppColors.textSecondary),
+              selectedIcon: Icon(Icons.airplane_ticket, color: AppColors.primary),
               label: 'Discover',
             ),
             NavigationDestination(
-              icon: Icon(Icons.favorite_outline_rounded, color: EColors.textSecondary),
-              selectedIcon: Icon(Icons.favorite, color: EColors.primary),
+              icon: Icon(Icons.favorite_outline_rounded, color: AppColors.textSecondary),
+              selectedIcon: Icon(Icons.favorite, color: AppColors.primary),
               label: 'Favourite',
             ),NavigationDestination(
-              icon: Icon(Icons.person_outline, color: EColors.textSecondary),
-              selectedIcon: Icon(Icons.person, color: EColors.primary),
+              icon: Icon(Icons.person_outline, color: AppColors.textSecondary),
+              selectedIcon: Icon(Icons.person, color: AppColors.primary),
               label: 'Profile',
             ),
           ],

@@ -33,7 +33,7 @@ class AuthScreenHeader extends StatelessWidget {
                     style: const TextStyle(
                       fontSize: 22,
                       fontWeight: FontWeight.w600, // Semi-bold looks premium
-                      color: EColors.textPrimary, // Your dark navy variable// Gives a little breathing room between the two lines
+                      color: AppColors.textPrimary, // Your dark navy variable// Gives a little breathing room between the two lines
                     ),
                   // Keeps it perfectly centered
                 ),
@@ -47,7 +47,7 @@ class AuthScreenHeader extends StatelessWidget {
             fontSize: 20,
             fontWeight:
             FontWeight.bold, // Make the blue text slightly bolder
-            color: EColors
+            color: AppColors
                 .accentPrimary, // Your bright sky blue variable!
           ),
         ),

@@ -7,10 +7,8 @@ class LocationHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: 16),
-      decoration: BoxDecoration(
-        border: Border.all(color: Colors.black)
-      ),
+      margin: EdgeInsets.symmetric(horizontal: 24),
+
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -20,9 +18,9 @@ class LocationHeader extends StatelessWidget {
               Text("Location",style: Theme.of(context).textTheme.titleMedium,),
               Row(
                 children: [
-                  Icon(Icons.location_on_outlined,color: EColors.primary,),
+                  Icon(Icons.location_on_outlined,color: AppColors.primary,),
                   SizedBox(width: 4,),
-                  Text("Bhopal,Madhya Pradesh",style: Theme.of(context).textTheme.labelLarge,),
+                  Text("Bhopal,Madhya Pradesh",style: Theme.of(context).textTheme.bodyLarge,),
                 ],
               ),
 

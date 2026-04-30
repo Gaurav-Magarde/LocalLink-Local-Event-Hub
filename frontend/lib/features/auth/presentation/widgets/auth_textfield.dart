@@ -42,9 +42,9 @@ class AuthTextField extends StatelessWidget {
           horizontal: 20,
         ),
         filled: true,
-        fillColor: EColors.backgroundPrimary,
-        hintStyle: TextStyle(color: EColors.textSecondary),
-        prefixIcon: Icon(prefixIcon, color: EColors.textSecondary),
+        fillColor: AppColors.backgroundPrimary,
+        hintStyle: TextStyle(color: AppColors.textSecondary),
+        prefixIcon: Icon(prefixIcon, color: AppColors.textSecondary),
         labelText: labelText ?? '',
         labelStyle: TextStyle(
           color: Colors.grey[700],
@@ -57,15 +57,15 @@ class AuthTextField extends StatelessWidget {
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(30),
-          borderSide: BorderSide(width: 1, color: EColors.borderSoft),
+          borderSide: BorderSide(width: 1, color: AppColors.borderSoft),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(30),
-          borderSide: const BorderSide(width: 1.5, color: EColors.primary),
+          borderSide: const BorderSide(width: 1.5, color: AppColors.primary),
         ),
         errorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(30),
-          borderSide: const BorderSide(width: 1, color: EColors.error),
+          borderSide: const BorderSide(width: 1, color: AppColors.error),
         ),
         suffixIcon: suffixIcon,
       ),

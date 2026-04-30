@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:frontend/core/router/app_router.dart';
 
+import 'core/theme/app_theme.dart';
 import 'core/theme/theme.dart';
 
 void main() {
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       routerConfig: AppRoute.router,
       title: 'Flutter Demo',
-      theme: EAppTheme.lightTheme,
+      theme: AppTheme.darkTheme(false),
 
     );
   }
