@@ -23,21 +23,21 @@ final ColorScheme appColorScheme = ColorScheme(
   brightness: Brightness.light,
 
   // Main Branding
-  primary: EColors.primary,
-  onPrimary: EColors.light, // Text/Icons on primary buttons
+  primary: AppColors.primary,
+  onPrimary: AppColors.light, // Text/Icons on primary buttons
 
-  secondary: EColors.accentPrimary, // Using your Sky Blue as the accent
-  onSecondary: EColors.light,
+  secondary: AppColors.accentPrimary, // Using your Sky Blue as the accent
+  onSecondary: AppColors.light,
 
   // Backgrounds
-  surface: EColors.backgroundPrimary, // Cards, TextFields, Sheets
-  onSurface: EColors.textPrimary,     // Main text on surfaces
+  surface: AppColors.backgroundPrimary, // Cards, TextFields, Sheets
+  onSurface: AppColors.textPrimary,     // Main text on surfaces
 
 
 
-  error: EColors.error,
-  onError: EColors.light,
+  error: AppColors.error,
+  onError: AppColors.light,
 
-  outline: EColors.borderSoft,
-  onSurfaceVariant: EColors.textSecondary, // Hint text and icons
+  outline: AppColors.borderSoft,
+  onSurfaceVariant: AppColors.textSecondary, // Hint text and icons
 );

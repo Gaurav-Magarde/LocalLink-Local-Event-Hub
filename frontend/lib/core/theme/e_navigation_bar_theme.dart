@@ -9,7 +9,7 @@ class ENavigationBarTheme{
     labelTextStyle: WidgetStateProperty.resolveWith((states) {
       // If the icon is selected, use the primary color. Otherwise, use grey.
       if (states.contains(WidgetState.selected)) {
-        return const TextStyle(color: EColors.primary,fontSize: 16);
+        return const TextStyle(color: AppColors.primary,fontSize: 16);
       } else {
         return const TextStyle(color: Colors.grey);
       }

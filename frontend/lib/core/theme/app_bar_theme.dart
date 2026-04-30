@@ -10,11 +10,11 @@ class EAppBarTheme{
     centerTitle: false,
 
     toolbarHeight: 50,
-    titleTextStyle: TextStyle(fontWeight: FontWeight.w600,fontSize: 20,color: EColors.textPrimary),
+    titleTextStyle: TextStyle(fontWeight: FontWeight.w600,fontSize: 20,color: AppColors.textPrimary),
     actionsPadding: EdgeInsets.symmetric(horizontal: 16),
     // shadowColor: Colors.grey,
     systemOverlayStyle:SystemUiOverlayStyle.light,
-    foregroundColor: EColors.textPrimary,
+    foregroundColor: AppColors.textPrimary,
 
   //   shape: Border(
   // bottom: BorderSide(
