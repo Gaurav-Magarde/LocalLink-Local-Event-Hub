@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:frontend/core/theme/elevated_button_theme.dart';
 
 import 'app_font.dart';
 import 'app_spacing.dart';
@@ -52,7 +53,7 @@ class AppTheme {
       ),
 
       // ────── SCAFFOLD ──────
-      scaffoldBackgroundColor: isDark ? AppColors.darkPrimary : AppColors.primary,
+      scaffoldBackgroundColor: isDark ? AppColors.darkPrimary : AppColors.surfaceWhite,
 
       // ────── NAV BAR ──────
       bottomNavigationBarTheme: BottomNavigationBarThemeData(
@@ -68,8 +69,8 @@ class AppTheme {
       appBarTheme: AppBarTheme(
         toolbarHeight: 100,
         iconTheme: IconThemeData(color: AppColors.whitetext),
-        backgroundColor: isDark ? AppColors.darkPrimaryDark : AppColors.primary,
-        titleTextStyle: AppTypography.h2,
+        backgroundColor: isDark ? AppColors.darkPrimaryDark : AppColors.surfaceWhite,
+        // titleTextStyle: AppTypography.h2,
         centerTitle: true,
       ),
 
@@ -92,11 +93,20 @@ class AppTheme {
         ),
       ),
 
-      elevatedButtonTheme: ElevatedButtonThemeData(
+      elevatedButtonTheme: ElevatedButtonThemes.lightElevatedButtonTheme,
+      outlinedButtonTheme: OutlinedButtonThemeData(
         style: ElevatedButton.styleFrom(
-          backgroundColor:isDark ? AppColors.mainGreen : AppColors.primary,
-          foregroundColor:isDark ? AppColors.textPrimary : AppColors.whitetext,
-          textStyle: AppTypography.button,
+          // minimumSize: const Size(double.infinity, AppRadius.xxl),
+          elevation: 5,
+          foregroundColor: AppColors.textSecondary,
+          disabledForegroundColor: Colors.grey,
+          maximumSize: const Size(double.infinity, AppRadius.xxl),
+          side: const BorderSide(color: AppColors.textSecondary),
+          padding: const EdgeInsets.symmetric(horizontal: AppRadius.lg),
+          textStyle: AppTypography.h2,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(AppRadius.sm),
+          ),
         ),
       ),
 

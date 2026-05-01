@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:frontend/features/bookings/presentation/screens/all_tickets_screen.dart';
 import 'package:frontend/features/dashboard/presentation/screens/dashboard.dart';
 
 import '../theme/colors.dart';
@@ -19,7 +20,7 @@ class _RootScreenState extends State<RootScreen> {
   // Later, we will replace these with your actual EventFeed and Profile screens!
   final List<Widget> _screens = [
     const Dashboard(),
-    const Center(child: Text("My Tickets", style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold))),
+    const AllTicketsScreen(),
     const Center(child: Text("Favourites", style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold))),
     const Center(child: Text("Profile & Settings", style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold))),
   ];

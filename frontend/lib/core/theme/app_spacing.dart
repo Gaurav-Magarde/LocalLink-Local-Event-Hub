@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AppSpacing {
+  const AppSpacing._();
   static const double xss = 2;
   static const double xs = 4;
   static const double sm = 8;
@@ -16,16 +17,18 @@ class AppSpacing {
 }
 
 class AppRadius {
+  const AppRadius._();
   static const double sm = 8;
   static const double md = 16;
   static const double lg = 24;
   static const double xl = 32;
-  static const double xxl = 64;
-  static const double xxxl = 55;
+  static const double xxl = 55;
+  static const double xxxl = 64;
   static const double full = 999;
 }
 
 class AppGaps {
+  const AppGaps._();
   static const SizedBox xs = SizedBox(height: AppSpacing.xs);
   static const SizedBox sm = SizedBox(height: AppSpacing.sm);
   static const SizedBox md = SizedBox(height: AppSpacing.md);

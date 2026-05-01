@@ -1,5 +1,6 @@
 import 'package:frontend/core/router/root_screen.dart';
 import 'package:frontend/core/router/screen_redirect.dart';
+import 'package:frontend/features/bookings/presentation/screens/all_tickets_screen.dart';
 import 'package:frontend/features/dashboard/presentation/screens/dashboard.dart';
 import 'package:go_router/go_router.dart';
 
@@ -43,6 +44,12 @@ class AppRoute {
         builder: (context, state) {
           return ScreenRedirect();
         },
+      ),GoRoute(
+        path: AppRoutes.allTicketsScreenPath,
+        name: AppRoutes.allTicketsScreenName,
+        builder: (context, state) {
+          return AllTicketsScreen();
+        },
       ),
     ],
   );
@@ -59,5 +66,7 @@ interface class AppRoutes {
   static const String screenRedirectName = 'screenRedirect';
   static const String rootScreenPath = '/rootScreen';
   static const String rootScreenName = 'rootScreen';
+  static const String allTicketsScreenName = '/allTickets';
+  static const String allTicketsScreenPath = 'allTickets';
   // static const String loginScreen = '/login';
 }

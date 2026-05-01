@@ -4,7 +4,7 @@ class AppColors {
   // ==========================================
   // YOUR VARIABLES (Mapped to the UI Image)
   // ==========================================
-
+  const AppColors._();
   // The vibrant pink/magenta used for the main "Buy Ticket" and "Place Order" buttons
   static const Color primary = Color(0xFFFF007A);
 
