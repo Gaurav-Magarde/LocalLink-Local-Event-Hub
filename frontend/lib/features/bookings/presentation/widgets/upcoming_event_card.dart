@@ -89,7 +89,7 @@ class UpcomingEventCard extends StatelessWidget {
                                 ),
                                 child: Text(
                                   buttonLabel,
-                                  style: Theme.of(context).textTheme.titleMedium
+                                  style: Theme.of(context).textTheme.labelLarge
                                       ?.apply(
                                         color: Theme.of(
                                           context,
@@ -112,7 +112,7 @@ class UpcomingEventCard extends StatelessWidget {
               children: [
                 Expanded(child: OutlinedButton(onPressed: () {}, child: Text("Cancel"))),
                 AppGaps.wMd,
-                Expanded(child: ElevatedButton(onPressed: () {}, child: Text("View Ticket"))),
+                Expanded(child: SizedBox(height: AppSpacing.xxl, child: ElevatedButton(onPressed: () {}, child: Text("View Ticket")))),
               ],
             ),
           ],

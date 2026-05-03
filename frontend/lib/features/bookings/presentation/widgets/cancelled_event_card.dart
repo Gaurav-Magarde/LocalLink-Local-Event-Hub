@@ -89,7 +89,7 @@ class CancelledEventCard extends StatelessWidget {
                                 ),
                                 child: Text(
                                   "Cancelled",
-                                  style: Theme.of(context).textTheme.titleMedium
+                                  style: Theme.of(context).textTheme.labelLarge
                                       ?.apply(
                                     color: Theme.of(
                                       context,

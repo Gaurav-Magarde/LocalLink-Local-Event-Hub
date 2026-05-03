@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:frontend/features/bookings/presentation/screens/all_tickets_screen.dart';
 import 'package:frontend/features/dashboard/presentation/screens/dashboard.dart';
+import 'package:frontend/features/favourites/presentation/screens/favourites_screen.dart';
+import 'package:frontend/features/profile/presentation/screens/profile_screen.dart';
 
 import '../theme/colors.dart';
 // Import your EColors here!
@@ -21,8 +23,8 @@ class _RootScreenState extends State<RootScreen> {
   final List<Widget> _screens = [
     const Dashboard(),
     const AllTicketsScreen(),
-    const Center(child: Text("Favourites", style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold))),
-    const Center(child: Text("Profile & Settings", style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold))),
+    const FavouritesScreen(),
+    const ProfileScreen(),
   ];
 
   @override

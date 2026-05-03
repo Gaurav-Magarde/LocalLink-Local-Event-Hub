@@ -9,7 +9,7 @@ class ElevatedButtonThemes {
         style: ElevatedButton.styleFrom(
           elevation: 5,
           backgroundColor: AppColors.primary,
-          // minimumSize: const Size(double.infinity, AppRadius.xxl),
+          minimumSize: const Size(double.infinity, AppRadius.xxl),
 
           foregroundColor: Colors.white,
           disabledForegroundColor: Colors.grey,
